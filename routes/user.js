@@ -8,6 +8,7 @@ const User = require("../models/user");
 
 router.get("/", async (req, res) => {
     try {
+        
         const user = await User.find()
             .select("email _id password")
             .exec()
