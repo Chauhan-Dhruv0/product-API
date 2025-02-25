@@ -5,7 +5,7 @@ const multer =require('multer');
 
 
 
-// Strorage
+// img Strorage
 
 const strorage = multer.diskStorage({
   destination:(req,file,cb)=>{
@@ -38,6 +38,7 @@ router.get("/", async (req, res) => {
         //     }
 
         //   }
+        
         // })
       });
     } catch (err) {
